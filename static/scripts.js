@@ -19,6 +19,7 @@ function preloadImage(url) {
 function showImage(index) {
     const imgElement = document.getElementById('image');
     const loadingElement = document.getElementById('loading');
+    const indexElement = document.getElementById('index-display');
 
     loadingElement.style.display = 'block';
     imgElement.style.display = 'none';
@@ -34,6 +35,9 @@ function showImage(index) {
 
     imgElement.src = `/image_proxy?url=${encodeURIComponent(imageUrls[index])}`;
     currentIndex = index;
+
+    // Update the index display
+    indexElement.textContent = `Bild ${currentIndex + 1} von ${imageUrls.length}`;
 
     // Preload next 5 images
     for (let i = 1; i <= 5; i++) {

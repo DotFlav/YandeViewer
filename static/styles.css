@@ -1,11 +1,25 @@
+body {
+    background-color: #333; /* Dunkelgrauer Hintergrund */
+    color: #fff; /* Weiße Schriftfarbe */
+    margin: 0; /* Entfernt die Standardmargen des Browsers */
+    overflow: hidden; /* Verhindert Scrollen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Höhe des gesamten Viewports */
+}
+
 .container {
     text-align: center;
     position: relative;
-    height: 100vh;
+    max-height: calc(100vh - 100px); /* Maximalhöhe des Containers */
+    max-width: calc(100vw - 100px); /* Maximalbreite des Containers */
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .navigation {
     position: absolute;
     top: 50%;
@@ -13,28 +27,30 @@
     cursor: pointer;
     font-size: 2em;
     user-select: none;
-    color: #000;
+    color: #fff;
     padding: 0 15px;
     z-index: 10;
 }
+
 #prev {
     left: 10px;
 }
+
 #next {
     right: 10px;
 }
+
 img {
     max-width: 100%;
     max-height: 100%;
     display: block;
     margin: 0 auto;
 }
-#loading {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2em;
-    display: none;
-    z-index: 20;
+
+#index-display {
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+    position: relative;
+    margin-top: 10px; /* Abstand nach oben */
 }

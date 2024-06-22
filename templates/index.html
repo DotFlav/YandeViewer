@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tag Suche</title>
+    <title>YandeViewer</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Tag Suche</h1>
-    <form action="/search">
-        <label for="tags">Tags:</label>
-        <input type="text" id="tags" name="tags" value="d.va">
-        <button type="submit">Suchen</button>
-    </form>
+    <div>
+        <h1>YandeViewer</h1>
+        <form action="/search">
+            <label for="tags">Tags:</label>
+            <input type="text" id="tags" name="tags" value="d.va">
+            <button type="submit">Suchen</button>
+        </form>
+    </div>
 </body>
 </html>
