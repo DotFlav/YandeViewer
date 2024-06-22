@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bildergalerie</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation" id="prev">&laquo;</div>
+        <div id="loading">Laden...</div>
+        <img id="image" src="" alt="Bild">
+        <div class="navigation" id="next">&raquo;</div>
+    </div>
+    <script id="image-urls" type="application/json">{{ image_urls|tojson }}</script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
