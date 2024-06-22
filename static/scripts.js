@@ -56,5 +56,4 @@ function showNextImage() {
     showImage(newIndex);
 }
 
-// Initial display and preload the next 5 images
 showImage(currentIndex);

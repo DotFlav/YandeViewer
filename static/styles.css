@@ -1,20 +1,20 @@
 body {
-    background-color: #333; /* Dunkelgrauer Hintergrund */
-    color: #fff; /* Weiße Schriftfarbe */
-    margin: 0; /* Entfernt die Standardmargen des Browsers */
-    overflow: hidden; /* Verhindert Scrollen */
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Höhe des gesamten Viewports */
+    height: 100vh;
 }
 
 .container {
     text-align: center;
     position: relative;
-    max-height: calc(100vh - 100px); /* Maximalhöhe des Containers */
-    max-width: calc(100vw - 100px); /* Maximalbreite des Containers */
+    max-height: calc(100vh - 100px);
+    max-width: calc(100vw - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,5 +52,5 @@ img {
     font-size: 1.2em;
     color: #fff;
     position: relative;
-    margin-top: 10px; /* Abstand nach oben */
+    margin-top: 10px;
 }
